@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Location_Name": {
+      "type": "string"
+    },
+    "Location_Address": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Location_Name"
+    }
+  }
+}

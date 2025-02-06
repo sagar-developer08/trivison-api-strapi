@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prescriptions",
+  "info": {
+    "singularName": "prescription",
+    "pluralName": "prescriptions",
+    "displayName": "Prescription"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OD": {
+      "type": "json"
+    },
+    "OS": {
+      "type": "json"
+    },
+    "Pupillary_Distance": {
+      "type": "string"
+    },
+    "prescription": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accessories",
+  "info": {
+    "singularName": "accessory",
+    "pluralName": "accessories",
+    "displayName": "Accessory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MODEL": {
+      "type": "string"
+    },
+    "COLOR": {
+      "type": "string"
+    },
+    "RETAIL_PRICE": {
+      "type": "string"
+    },
+    "PRODUCT_NAME_SHORT": {
+      "type": "string"
+    },
+    "PRODUCT_NAME_LONG": {
+      "type": "string"
+    },
+    "MATERIAL": {
+      "type": "string"
+    },
+    "METAL_TRIM": {
+      "type": "string"
+    },
+    "PRODUCT_DESCRIPTION": {
+      "type": "text"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "accessories"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "PRODUCT_NAME_SHORT"
+    },
+    "Image_1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Image_2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Image_3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Image_4": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
