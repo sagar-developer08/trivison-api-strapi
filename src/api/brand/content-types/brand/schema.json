@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Meta_title": {
+    "Name": {
       "type": "string"
     },
     "Title": {
@@ -33,8 +33,7 @@
       "target": "api::category.category"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "Name"
+      "type": "uid"
     },
     "products": {
       "type": "relation",
@@ -59,7 +58,7 @@
         "audios"
       ]
     },
-    "Name": {
+    "Meta_title": {
       "type": "string"
     }
   }
